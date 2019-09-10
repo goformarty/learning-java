@@ -172,7 +172,12 @@ public class MyArrayList<T> implements List<T> {
     @Override
     public T remove(int index) {
         // TODO: FILL THIS IN!
-        return null;
+        T oldElement = get(index);
+        for (int i = index; i < array.length - 1; i++) {
+            array[i] = array[i +1];
+        }
+        size--;
+        return oldElement;
     }
 
     @Override
