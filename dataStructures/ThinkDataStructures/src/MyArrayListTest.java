@@ -46,7 +46,7 @@ public class MyArrayListTest {
             mylist.add(i);
         }
         //System.out.println(Arrays.toString(mal.toArray()));
-        assertThat(mylist.get(18), is(new Integer(19)));
+        assertThat(mylist.get(18), is(19));
     }
 
     /**
@@ -56,7 +56,7 @@ public class MyArrayListTest {
     public void testAddIntT() {
         mylist.add(1, 5);
         //System.out.println(Arrays.toString(mal.toArray()));
-        assertThat(mylist.get(1), is(Integer.valueOf(5)));
+        assertThat(mylist.get(1), is(5));
         assertThat(mylist.size(), is(4));
 
         try {
@@ -75,7 +75,7 @@ public class MyArrayListTest {
 
         mylist.add(5, 7);
         //System.out.println(Arrays.toString(mal.toArray()));
-        assertThat(mylist.get(5), is(new Integer(7)));
+        assertThat(mylist.get(5), is(7));
     }
 
     /**
@@ -87,7 +87,7 @@ public class MyArrayListTest {
         mylist.addAll(list);
         mylist.addAll(list);
         assertThat(mylist.size(), is(12));
-        assertThat(mylist.get(5), is(new Integer(3)));
+        assertThat(mylist.get(5), is(3));
     }
 
     /**
