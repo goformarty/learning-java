@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/LinkedListExample.iml" filepath="$PROJECT_DIR$/LinkedListExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSAwithErnesto.iml" filepath="$PROJECT_DIR$/DSAwithErnesto.iml" />
     </modules>
   </component>
 </project>
