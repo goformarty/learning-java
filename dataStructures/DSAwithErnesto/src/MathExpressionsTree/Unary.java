@@ -1,16 +1,16 @@
 package MathExpressionsTree;
 
-public class Unary extends Node {
+public class Unary extends NodeBinary {
 
-    double value;
+    NodeBinary singleNode;
 
-    public Unary(Node node) {
-        super(null, null);
-        value = node.evaluate();
+    public Unary(NodeBinary nodeBinary) {
+        super();
+        this.singleNode = nodeBinary;
     }
 
     @Override
     public double evaluate() {
-        return value * (-1);
+        return singleNode.evaluate() * (-1);
     }
 }

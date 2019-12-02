@@ -1,30 +1,22 @@
 package MathExpressionsTree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class Node {
-    Node left = null;
-    Node right = null;
+    List<Node> children;
 
-    public Node(Node left, Node right) {
-        this.left = left;
-        this.right = right;
+    public Node() {
+        this.children = new ArrayList<>();
     }
 
-    public Node getLeft() {
-        return left;
-    }
-
-    public Node getRight() {
-        return right;
-    }
-
-    public void setLeft(Node left) {
-        this.left = left;
-    }
-
-    public void setRight(Node right) {
-        this.right = right;
+    public Node(ArrayList<Node> children) {
+        this.children = children;
     }
 
     public abstract double evaluate();
 
+    public void addChild(Node child) {
+        this.children.add(child);
+    }
 }

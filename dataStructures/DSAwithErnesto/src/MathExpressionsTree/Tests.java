@@ -10,10 +10,10 @@ public class Tests {
         // 2 + 5
         final double valueLeft = 2;
         final double valueRight = 5;
-        final Node leftNode = new Constant(valueLeft);
-        final Node rightNode = new Constant(valueRight);
+        final NodeBinary leftNodeBinary = new Constant(valueLeft);
+        final NodeBinary rightNodeBinary = new Constant(valueRight);
 
-        final Node expression =  new Addition(leftNode, rightNode);
+        final NodeBinary expression =  new Addition(leftNodeBinary, rightNodeBinary);
         final double result = valueLeft + valueRight;
 
         assertEquals(result, expression.evaluate(), 0);
@@ -24,7 +24,7 @@ public class Tests {
         // -(2 + (3 * 5))
         // -17
 
-        final Node expression =  new Unary(
+        final NodeBinary expression =  new Unary(
                 new Addition(
                         new Constant(2),
                         new Multiplication(
@@ -39,5 +39,4 @@ public class Tests {
 
         assertEquals(result, expression.evaluate(), 0);
     }
-
 }

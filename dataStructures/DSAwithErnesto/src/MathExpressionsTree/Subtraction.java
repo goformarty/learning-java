@@ -1,8 +1,8 @@
 package MathExpressionsTree;
 
-public class Subtraction extends Node {
+public class Subtraction extends NodeBinary {
 
-    public Subtraction(Node left, Node right) {
+    public Subtraction(NodeBinary left, NodeBinary right) {
         super(left, right);
     }
 

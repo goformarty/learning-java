@@ -1,8 +1,8 @@
 package MathExpressionsTree;
 
-public class Multiplication extends Node {
+public class Multiplication extends NodeBinary {
 
-    public Multiplication(Node left, Node right) {
+    public Multiplication(NodeBinary left, NodeBinary right) {
         super(left, right);
     }
 

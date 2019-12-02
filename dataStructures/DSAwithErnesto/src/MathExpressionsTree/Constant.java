@@ -1,11 +1,11 @@
 package MathExpressionsTree;
 
-public class Constant extends Node {
+public class Constant extends NodeBinary {
 
     private double value;
 
     public Constant(double value) {
-        super(null, null);
+        super();
         this.value = value;
     }
 

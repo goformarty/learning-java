@@ -1,7 +1,7 @@
 package MathExpressionsTree;
 
-public class Division extends Node {
-    public Division(Node left, Node right) {
+public class Division extends NodeBinary {
+    public Division(NodeBinary left, NodeBinary right) {
         super(left, right);
     }
 
